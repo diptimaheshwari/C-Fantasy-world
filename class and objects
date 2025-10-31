@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+
+class character{
+    public:
+   string name;
+   int age;
+   string race;
+   int height;
+   
+   
+    character(string a, int b, string c, int d){
+        cout<<"fantasy journey has started:"<<endl;
+        
+        name = a;
+        age = b;
+        race = c;
+        height = d;
+        
+        
+    }
+    void Printdetails(){
+        cout<<name<<endl;
+        cout<<age<<endl;
+        cout<<race<<endl;
+        cout<<height<<endl;
+        cout<<height*10<<endl;
+    }
+};
+
+int main(){
+    character hero1("Harry potter", 11, "wizard", 4);
+    hero1.Printdetails();
+    
+    character hero2("Hermoini granger", 12, "witch", 3);
+    hero2.Printdetails();
+    
+    character hero3("Ronald weasley", 11, "wizard", 4);
+    hero3.Printdetails();
+
+  
+    
+    return 0;
+}
